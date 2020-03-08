@@ -10,6 +10,14 @@ app.get('/', function(req, res)
     res.send('Landing Page');
 });
 
+//Create About Page
+app.get('/about', function(req, res)
+{
+    res.status(200);
+    res.type('text/plain');
+    res.send('About Page');
+});
+
 //Creating Custom 404 Page
 app.use(function(req, res) 
 {
